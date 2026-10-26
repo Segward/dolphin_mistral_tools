@@ -15,7 +15,8 @@ def main() -> None:
                 reply = ask_model(messages, content)
                 print(reply)
 
-                content = match_tool(reply)
+                result = match_tool(reply)
+                content = None if result is None else f"Tool result:\n{result}"
     except (KeyboardInterrupt, EOFError):
         print("\nGoodbye!")
 

@@ -19,4 +19,5 @@ uv run model
 - `<read PATH>` reads a file
 - `<write PATH>TEXT</write>` writes a file
 - `<ls PATH>` lists a folder
+- `<tree PATH>` lists a folder and all its subfolders
 - `<find NAME PATH>` finds a file

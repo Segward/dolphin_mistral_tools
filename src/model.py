@@ -1,10 +1,10 @@
 from ollama import chat
 
-from tools import TOOL_PROMPT
+from tools import TOOL_EXAMPLES, TOOL_PROMPT
 
 
 def new_chat() -> list[dict]:
-    return [{"role": "system", "content": TOOL_PROMPT}]
+    return [{"role": "system", "content": TOOL_PROMPT}, *TOOL_EXAMPLES]
 
 def ask_model(messages: list[dict], content: str) -> str:
     messages.append({"role": "user", "content": content})
