@@ -8,8 +8,6 @@ def new_chat() -> list[dict]:
 
 def ask_model(messages: list[dict], content: str) -> str:
     messages.append({"role": "user", "content": content})
-
     reply = chat(model="dolphin-mistral", messages=messages).message.content
     messages.append({"role": "assistant", "content": reply})
-
     return reply

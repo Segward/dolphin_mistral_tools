@@ -16,6 +16,7 @@ uv run model
 
 ## Tools
 
-- `<ls path>` lists a folder
-- `<read path>` reads a file
-- `<write path>text</write>` writes a file
+- `<read PATH>` reads a file
+- `<write PATH>TEXT</write>` writes a file
+- `<ls PATH>` lists a folder
+- `<find NAME PATH>` finds a file
